@@ -1,5 +1,4 @@
 import { Button } from '@/components/ui/button'
-import { Progress } from '@/components/ui/progress'
 import { RefreshCw } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -14,10 +13,6 @@ function CourseCard({course}) {
             </div>
             <h2 className='mt-3 font-bold text-lg'>{course?.courseLayout?.course_name}</h2>
             <p className='text-sm line-clamp-2 text-gray-500 mt-2'>{course?.courseLayout?.course_summary}</p>
-
-            <div>
-                <Progress className='mt-3'/>
-            </div>
 
             <div className='mt-3 flex justify-end'>
                 {course?.status == 'Generating' ?
